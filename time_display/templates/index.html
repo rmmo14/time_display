@@ -4,17 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time Display</title>
-    <link rel="stylesheet" href="/time_display/templates/style.css">
+    <title>Display Time</title>
+    <style>
+        p {
+            margin-left: 42.25%;
+            border: 2px solid black;
+            width: 12%;
+            padding: 0 1% 1.5% 1%;
+        }
+        
+        div {
+            border: 2px solid black;
+            width: 25%;
+            padding: 0 5% 0 10%;
+            margin-left: 30%;
+        }
+        
+        #time {
+            margin-left: 17%;
+        }
+    </style>
 </head>
 
-<body onload="printDate()">
+<body>
     <p>The current date and time:</p>
-    <div id="container">
-        <h1 id="fecha"></h1>
-        <h1 id="tiempo"></h1>
+    <div>
+        <h1 id="date">{{date}}</h1>
+        <h1 id="time">{{time}}</h1>
     </div>
-    <script src="/time_display/templates/script.js"></script>
 </body>
 
 </html>
